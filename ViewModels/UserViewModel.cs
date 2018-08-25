@@ -4,7 +4,6 @@
 // ====================================================
 
 using Erpmi.Core.Models;
-using Erpmi.Core.Helpers;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -36,7 +35,6 @@ namespace Erpmi.Core.ViewModels
 
         public bool IsLockedOut { get; set; }
 
-        [MinimumCount(1, ErrorMessage = "Roles cannot be empty")]
         public string[] Roles { get; set; }
     }
 
